@@ -8,11 +8,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Library</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  
   <link
   rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-/>
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
 
   <script src="index.js"></script>
 </head>
@@ -68,9 +67,17 @@
     <section id="highlights">
       <div class="container">
         <div class="row">
-          <h2 class="section__title books__header--title">
-            Why choose <span class="purple">Library</span>
-          </h2>
+          <div class="books__header">
+            <h2 class="section__title books__header--title">
+              Why choose <span class="purple">Library</span>
+            </h2>
+            <select id="filter">
+              <option value="" disabled selected>Sort</option>
+              <option value="LOW_TO_HIGH">Price, Low to High</option>
+              <option value="HIGH_TO_LOW">Price, High to Low</option>
+              <option value="RATING">Rating</option>
+            </select>
+          </div>
           <div class="highlight__wrapper">
             <div class="highlight">
               <div class="highlight__img">
@@ -116,6 +123,7 @@
           <h2 class="section__title">
             Featured <span class="purple">Books</span>
           </h2>
+         
           <div class="books">
             <div class="book">
               <figure class="book__img--wrapper">
@@ -381,5 +389,9 @@
     </div>
   </footer>
 </body>
-
+<script src="index.js">
+  function renderBooks(){
+    console.log('testing')
+  }
+</script>
 </html>

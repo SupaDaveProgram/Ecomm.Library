@@ -1,10 +1,5 @@
-
-function openMenu() {
-  document.body.classList += " menu--open"
-}
-
-function closeMenu() {
-  document.body.classList.remove('menu--open')
+function renderBooks(){
+  console.log('renderBooks(123)')
 }
 
 // FAKE DATA
